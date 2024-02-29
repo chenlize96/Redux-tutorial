@@ -19,7 +19,7 @@ const Login = (props) => {
     if (loginStatus) {
       navigate("/"); // Replace with your desired path
     }
-  }, [navigate]);
+  }, [navigate, loginStatus]);
 
   return (
     <React.Fragment>
