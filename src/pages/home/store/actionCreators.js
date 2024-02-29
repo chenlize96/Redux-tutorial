@@ -1,0 +1,64 @@
+import * as constants from "./constants";
+import axios from "axios";
+import { fromJS } from "immutable";
+
+const changeList = (data) => ({
+  type: constants.CHANGE_LIST,
+  data: fromJS(data),
+  totalPage: Math.ceil(data.length / 5),
+});
+
+const addHomeList = (list) => ({
+  type: constants.ADD_ARTICLE_LIST,
+  list: fromJS(list),
+})
+
+export const getMoreList = () => {
+  return (dispatch) => {
+    axios
+      .get("/api/homeList.json")
+      .then((res) => {
+        const result = res.data.data;
+        dispatch(addHomeList(result));
+      })
+      .catch(() => {
+        console.log("error");
+      });
+  }
+};
+
+export const searchFocus = () => ({
+  type: constants.SEARCH_FOCUS,
+});
+
+export const searchBlur = () => ({
+  type: constants.SEARCH_BLUR,
+});
+
+export const mouseEnter = () => ({
+  type: constants.MOUSE_ENTER,
+});
+
+export const mouseLeave = () => ({
+  type: constants.MOUSE_LEAVE,
+});
+
+export const changePage = (page) => ({
+  type: constants.CHANGE_PAGE,
+  page: page,
+});
+
+export const getList = () => {
+  return (dispatch) => {
+    axios
+      .get("/api/headerList.json")
+      .then((res) => {
+        const data = res.data;
+        dispatch(changeList(data.data));
+        console.log(data);
+      })
+      .catch(() => {
+        console.log("error");
+      });
+  };
+};

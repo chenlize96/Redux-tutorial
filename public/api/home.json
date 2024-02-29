@@ -1,0 +1,95 @@
+{
+  "success": true,
+  "data": {
+    "topicList": [
+      { "id": 1, "title": "社会热点" },
+      { "id": 2, "title": "科技创新" },
+      { "id": 3, "title": "环境保护" },
+      { "id": 4, "title": "全球政治" },
+      { "id": 5, "title": "经济发展趋势" },
+      { "id": 6, "title": "教育改革" },
+      { "id": 7, "title": "文化多样性" },
+      { "id": 8, "title": "健康与医疗" },
+      { "id": 9, "title": "能源可持续性" },
+      { "id": 10, "title": "人工智能伦理" },
+      { "id": 11, "title": "网络安全" },
+      { "id": 12, "title": "食品安全" },
+      { "id": 13, "title": "移民与全球化" },
+      { "id": 14, "title": "城市规划" },
+      { "id": 15, "title": "跨国公司影响力" },
+      { "id": 16, "title": "贫困与社会不平等" },
+      { "id": 17, "title": "太空探索" },
+      { "id": 18, "title": "体育赛事影响" },
+      { "id": 19, "title": "娱乐业变迁" },
+      { "id": 20, "title": "青年就业问题" }
+    ],
+    "articleList": [
+      {
+        "id": 1,
+        "title": "电比油低,比亚迪再出王炸,汉唐荣耀版16.98万起",
+        "desc": "前两天比亚迪凭借驱逐舰05和秦荣耀版直接把A级市场轰炸了一次,这次又让燃油车再次破防了,直接向中高端市场发起总攻."
+      },
+      {
+        "id": 2,
+        "title": "未来城市：智能城市建设的新趋势",
+        "desc": "随着科技的发展，智能城市成为全球热议话题，集中展示了科技如何优化城市管理和生活质量。"
+      },
+      {
+        "id": 3,
+        "title": "绿色能源革命：清洁能源的未来发展",
+        "desc": "清洁能源正在改变全球能源格局，本文探讨了绿色能源的发展趋势及其对环境的积极影响。"
+      },
+      {
+        "id": 4,
+        "title": "数字货币的崛起：虚拟货币市场分析",
+        "desc": "本文深入分析了数字货币的发展历程，探讨其对全球金融市场的潜在影响。"
+      },
+      {
+        "id": 5,
+        "title": "AI在医疗领域的应用：未来医疗的新篇章",
+        "desc": "探索人工智能如何革新医疗领域，从疾病诊断到治疗方案的定制，AI展现了巨大潜力。"
+      },
+      {
+        "id": 6,
+        "title": "全球气候变化：挑战与应对策略",
+        "desc": "本文讨论了全球气候变化带来的挑战，并探索了可能的应对策略，以减少环境影响。"
+      },
+      {
+        "id": 7,
+        "title": "虚拟现实技术：从游戏到教育的广泛应用",
+        "desc": "分析虚拟现实技术如何从娱乐行业走向教育、医疗等多个领域，改变我们的生活和工作方式。"
+      },
+      {
+        "id": 8,
+        "title": "自动驾驶汽车：未来出行的革命",
+        "desc": "深入了解自动驾驶汽车的最新发展，以及它们如何引领交通出行的未来趋势。"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": 1,
+        "imgUrl": "https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U"
+      },
+      {
+        "id": 2,
+        "imgUrl": "https://picsum.photos/seed/picsum/200/300"
+      },
+      {
+        "id": 3,
+        "imgUrl": "https://picsum.photos/200/300?grayscale"
+      },
+      {
+        "id": 4,
+        "imgUrl": "https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U"
+      },
+      {
+        "id": 5,
+        "imgUrl": "https://picsum.photos/seed/picsum/200/300"
+      },
+      {
+        "id": 6,
+        "imgUrl": "https://picsum.photos/200/300?grayscale"
+      }
+    ]
+  }
+}
