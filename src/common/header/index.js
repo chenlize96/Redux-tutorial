@@ -8,11 +8,13 @@ import {
   Addition,
   Button,
   SearchWrapper,
+  SearchInfo,
 } from "./style";
 import SearchIcon from "@mui/icons-material/Search";
 import styled from "styled-components";
 import { CSSTransition } from "react-transition-group";
 import { connect } from "react-redux";
+import { actionCreators } from "./store";
 
 // Styled SearchIcon
 const StyledSearchIcon = styled(SearchIcon)`
@@ -56,6 +58,7 @@ const Header = (props) => {
             ></NavSearch>
           </CSSTransition>
           <StyledSearchIcon />
+          <SearchInfo></SearchInfo>
         </SearchWrapper>
       </Nav>
       <Addition>
@@ -68,19 +71,18 @@ const Header = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    focused: state.focused,
+    focused: state.getIn(["header", "focused"]),
+    // focused: state.get('header').get("focused"),
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     handleInputFocus() {
-      const action = { type: "search_focus" };
-      dispatch(action);
+      dispatch(actionCreators.searchFocus());
     },
     handleInputBlur() {
-      const action = { type: "search_blur" };
-      dispatch(action);
+      dispatch(actionCreators.searchBlur());
     },
   };
 };
